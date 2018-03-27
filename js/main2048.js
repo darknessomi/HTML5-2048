@@ -469,7 +469,7 @@ function isPC() {
     var system = {
         win : false,
         mac : false,
-        xll : false
+        x11 : false
     };
     //检测平台
     var p = navigator.platform;
@@ -477,7 +477,7 @@ function isPC() {
     system.mac = p.indexOf("Mac") == 0;
     system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
     //跳转语句
-    if (system.win || system.mac || system.xll) { //转向电脑端
+    if (system.win || system.mac || system.x11) { //转向电脑端
         return true; //是电脑
     } else {
         return false; //是手机
